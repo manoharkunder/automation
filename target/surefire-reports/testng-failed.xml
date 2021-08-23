@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="com.niveus.afya.testcase.ChooseRoleTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="submittrRoleIsEnable"/>
+        </methods>
+      </class> <!-- com.niveus.afya.testcase.ChooseRoleTest -->
+      <class name="com.niveus.afya.testcase.SortTest">
+        <methods>
+          <include name="verifySortTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.niveus.afya.testcase.SortTest -->
+      <class name="com.niveus.afya.testcase.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="loginPageTitleTest"/>
+          <include name="loginPagelabelTest"/>
+        </methods>
+      </class> <!-- com.niveus.afya.testcase.LoginPageTest -->
+      <class name="com.niveus.afya.testcase.ProfileTest">
+        <methods>
+          <include name="LoggedInUserNameTest"/>
+          <include name="updateUserInformationTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="profileHeaderTest"/>
+          <include name="userProfileTest"/>
+          <include name="clikcOnProfileTest"/>
+          <include name="myProfileVisibilityTest"/>
+          <include name="uploadProfileImageTest"/>
+          <include name="userRoleInProfileTest"/>
+        </methods>
+      </class> <!-- com.niveus.afya.testcase.ProfileTest -->
+      <class name="com.niveus.afya.testcase.FilterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="selectFilter"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.niveus.afya.testcase.FilterTest -->
+      <class name="com.niveus.afya.testcase.ChatPageTest">
+        <methods>
+          <include name="atCodesVisibilityTest"/>
+          <include name="setUp"/>
+          <include name="chatAreaElementTest"/>
+          <include name="tearDown"/>
+          <include name="chatHeaderVisibiltyTest"/>
+          <include name="mediaFilesSectionTest"/>
+          <include name="clikcOnChatSessionTest"/>
+          <include name="videoMemberListTest"/>
+        </methods>
+      </class> <!-- com.niveus.afya.testcase.ChatPageTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

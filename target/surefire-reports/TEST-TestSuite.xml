@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1,185.827" tests="90" errors="0" skipped="56" failures="6">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/niveus/Afya-Automation/target/test-classes:/home/niveus/Afya-Automation/target/classes:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/niveus/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/niveus/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/niveus/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/niveus/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/niveus/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/niveus/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/niveus/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/niveus/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/niveus/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/niveus/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/niveus/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/niveus/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/niveus/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/niveus/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/home/niveus/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/home/niveus/.m2/repository/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar:/home/niveus/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/niveus/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/niveus/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar:/home/niveus/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/home/niveus/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/niveus/.m2/repository/org/apache/poi/poi-scratchpad/3.9/poi-scratchpad-3.9.jar:/home/niveus/.m2/repository/org/apache/poi/ooxml-schemas/1.1/ooxml-schemas-1.1.jar:/home/niveus/.m2/repository/org/apache/poi/openxml4j/1.0-beta/openxml4j-1.0-beta.jar:/home/niveus/.m2/repository/log4j/log4j/1.2.8/log4j-1.2.8.jar:/home/niveus/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar:/home/niveus/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/home/niveus/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar:/home/niveus/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/home/niveus/.m2/repository/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar:/home/niveus/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:/home/niveus/.m2/repository/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar:/home/niveus/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/niveus/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/home/niveus/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/niveus/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/niveus/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/niveus/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/home/niveus/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/home/niveus/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/home/niveus/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/niveus/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="sun.java.command" value="/home/niveus/Afya-Automation/target/surefire/surefirebooter5314755531070908731.jar /home/niveus/Afya-Automation/target/surefire 2021-08-10T11-27-27_067-jvmRun1 surefire14492997422000481702tmp surefire_016569468515456935486tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/niveus/Afya-Automation/target/test-classes:/home/niveus/Afya-Automation/target/classes:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/home/niveus/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/home/niveus/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/home/niveus/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/niveus/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/home/niveus/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/niveus/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/home/niveus/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/home/niveus/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/home/niveus/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/home/niveus/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/home/niveus/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/home/niveus/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/home/niveus/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/home/niveus/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/home/niveus/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/home/niveus/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/home/niveus/.m2/repository/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar:/home/niveus/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/niveus/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/niveus/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar:/home/niveus/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/home/niveus/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/home/niveus/.m2/repository/org/apache/poi/poi-scratchpad/3.9/poi-scratchpad-3.9.jar:/home/niveus/.m2/repository/org/apache/poi/ooxml-schemas/1.1/ooxml-schemas-1.1.jar:/home/niveus/.m2/repository/org/apache/poi/openxml4j/1.0-beta/openxml4j-1.0-beta.jar:/home/niveus/.m2/repository/log4j/log4j/1.2.8/log4j-1.2.8.jar:/home/niveus/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar:/home/niveus/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar:/home/niveus/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar:/home/niveus/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/home/niveus/.m2/repository/org/mongodb/mongodb-driver/3.0.4/mongodb-driver-3.0.4.jar:/home/niveus/.m2/repository/org/mongodb/bson/3.0.4/bson-3.0.4.jar:/home/niveus/.m2/repository/org/mongodb/mongodb-driver-core/3.0.4/mongodb-driver-core-3.0.4.jar:/home/niveus/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/niveus/.m2/repository/io/github/bonigarcia/webdrivermanager/4.2.2/webdrivermanager-4.2.2.jar:/home/niveus/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/home/niveus/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/home/niveus/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/home/niveus/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.1/httpclient5-5.0.1.jar:/home/niveus/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.1/httpcore5-5.0.1.jar:/home/niveus/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.1/httpcore5-h2-5.0.1.jar:/home/niveus/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/home/niveus/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/niveus"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/niveus/Afya-Automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/niveus/Afya-Automation/target/surefire/surefirebooter5314755531070908731.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="user.name" value="niveus"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="5.4.0-73-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/niveus/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="/home/niveus/Afya-Automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.version" value="11.0.11+9-Ubuntu-0ubuntu2.20.04"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="closeSortTest" classname="com.niveus.afya.testcase.SortTest" time="0.915"/>
+  <testcase name="getSortOptionsTest" classname="com.niveus.afya.testcase.SortTest" time="0.104"/>
+  <testcase name="sortSectionIsEnabledTest" classname="com.niveus.afya.testcase.SortTest" time="0.089"/>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.SortTest" time="31.232">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.gnF7LF}, goog:chromeOptions: {debuggerAddress: localhost:33351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 701f5b8a380241a8244c9c30f9c33b20" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: headless chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.gnF7LF}, goog:chromeOptions: {debuggerAddress: localhost:33351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 701f5b8a380241a8244c9c30f9c33b20
+	at com.niveus.afya.testcase.SortTest.setUp(SortTest.java:45)
+</failure>
+    <system-out><![CDATA[Before navigating to: 'https://stagingwebapp.afya.chat/'
+Navigated to:'https://stagingwebapp.afya.chat/'
+Trying to find Element By : By.id: userName
+Found Element By : By.id: userName
+Trying to find Element By : By.id: password
+Found Element By : By.id: password
+Trying to find Element By : By.tagName: button
+Found Element By : By.tagName: button
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to click on: [[ChromeDriver: chrome on LINUX (701f5b8a380241a8244c9c30f9c33b20)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Clicked on: [[ChromeDriver: chrome on LINUX (701f5b8a380241a8244c9c30f9c33b20)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Trying to find Element By : By.xpath: //span[text()='Submitter Provider']/parent::div
+Found Element By : By.xpath: //span[text()='Submitter Provider']/parent::div
+Trying to click on: [[ChromeDriver: chrome on LINUX (701f5b8a380241a8244c9c30f9c33b20)] -> xpath: //span[text()='Submitter Provider']/parent::div]
+Clicked on: [[ChromeDriver: chrome on LINUX (701f5b8a380241a8244c9c30f9c33b20)] -> xpath: //span[text()='Submitter Provider']/parent::div]
+Trying to find Element By : By.xpath: //div[@role='filter_holder']//img[contains(@src,'data:image/png;')]
+Found Element By : By.xpath: //div[@role='filter_holder']//img[contains(@src,'data:image/png;')]
+Trying to find Element By : By.xpath: //span[text()=' All Chats']
+Found Element By : By.xpath: //span[text()=' All Chats']
+Trying to find Element By : By.xpath: //span[text()=' All Chats']
+Found Element By : By.xpath: //span[text()=' All Chats']
+Trying to click on: [[ChromeDriver: chrome on LINUX (701f5b8a380241a8244c9c30f9c33b20)] -> xpath: //span[text()=' All Chats']]
+Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="ant-typography ant-typography-small,black small___3HJfZ black___3XTln  undefined" role="text_comp" data-text-type="small,black">...</span> is not clickable at point (59, 243). Other element would receive the click: <div role="spinner" class="ant-spin ant-spin-spinning">...</div>
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.gnF7LF}, goog:chromeOptions: {debuggerAddress: localhost:33351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 701f5b8a380241a8244c9c30f9c33b20
+Trying to find Element By : By.xpath: //span[text()=' All Chats']
+Found Element By : By.xpath: //span[text()=' All Chats']
+Trying to click on: [[ChromeDriver: chrome on LINUX (701f5b8a380241a8244c9c30f9c33b20)] -> xpath: //span[text()=' All Chats']]
+Exception occured: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: headless chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.gnF7LF}, goog:chromeOptions: {debuggerAddress: localhost:33351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 701f5b8a380241a8244c9c30f9c33b20
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 31515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 10, 2021 11:28:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifySortTest" classname="com.niveus.afya.testcase.SortTest" time="0">
+    <skipped message="stale element reference: element is not attached to the page document&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.gnF7LF}, goog:chromeOptions: {debuggerAddress: localhost:33351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 701f5b8a380241a8244c9c30f9c33b20"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.SortTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="chatFilterTest" classname="com.niveus.afya.testcase.HomePageTest" time="3.77"/>
+  <testcase name="getHeaderTest" classname="com.niveus.afya.testcase.HomePageTest" time="2.959"/>
+  <testcase name="loginUSerNameTest" classname="com.niveus.afya.testcase.HomePageTest" time="2.693"/>
+  <testcase name="searchIsEnabled" classname="com.niveus.afya.testcase.HomePageTest" time="4.029"/>
+  <testcase name="sortFilterBtnTest" classname="com.niveus.afya.testcase.HomePageTest" time="3.714"/>
+  <testcase name="userLandingpageFilterTest" classname="com.niveus.afya.testcase.HomePageTest" time="6.551"/>
+  <testcase name="verifyAfyaLogoTest" classname="com.niveus.afya.testcase.HomePageTest" time="3.625"/>
+  <testcase name="verifySubmitterPageTest" classname="com.niveus.afya.testcase.HomePageTest" time="6.685"/>
+  <testcase name="clickOnRole" classname="com.niveus.afya.testcase.ChooseRoleTest" time="14.654"/>
+  <testcase name="responderRoleIsEnabled" classname="com.niveus.afya.testcase.ChooseRoleTest" time="7.685"/>
+  <testcase name="submittrRoleIsEnable" classname="com.niveus.afya.testcase.ChooseRoleTest" time="30.111">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.jBN2Lt}, goog:chromeOptions: {debuggerAddress: localhost:38815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5feeec612bb9047386c565c7df42ddc5&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Submitter Provider']/parent::div"}
+  (Session info: headless chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.jBN2Lt}, goog:chromeOptions: {debuggerAddress: localhost:38815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5feeec612bb9047386c565c7df42ddc5
+*** Element info: {Using=xpath, value=//span[text()='Submitter Provider']/parent::div}
+	at com.niveus.afya.testcase.ChooseRoleTest.submittrRoleIsEnable(ChooseRoleTest.java:43)
+</failure>
+    <system-out><![CDATA[Before navigating to: 'https://stagingwebapp.afya.chat/'
+Navigated to:'https://stagingwebapp.afya.chat/'
+Trying to find Element By : By.id: userName
+Found Element By : By.id: userName
+Trying to find Element By : By.id: password
+Found Element By : By.id: password
+Trying to find Element By : By.tagName: button
+Found Element By : By.tagName: button
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to click on: [[ChromeDriver: chrome on LINUX (5feeec612bb9047386c565c7df42ddc5)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Clicked on: [[ChromeDriver: chrome on LINUX (5feeec612bb9047386c565c7df42ddc5)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Trying to find Element By : By.xpath: //span[text()='Submitter Provider']/parent::div
+Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Submitter Provider']/parent::div"}
+  (Session info: headless chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.jBN2Lt}, goog:chromeOptions: {debuggerAddress: localhost:38815}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5feeec612bb9047386c565c7df42ddc5
+*** Element info: {Using=xpath, value=//span[text()='Submitter Provider']/parent::div}
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 13276
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 10, 2021 11:35:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verifyChooseRoleLabel" classname="com.niveus.afya.testcase.ChooseRoleTest" time="4.257"/>
+  <testcase name="switcgRoleIsEnabledTest" classname="com.niveus.afya.testcase.SwitchRoleTest" time="2.741"/>
+  <testcase name="clickOnSwitchRoleTest" classname="com.niveus.afya.testcase.SwitchRoleTest" time="3.441"/>
+  <testcase name="isRolesDisplayedTest" classname="com.niveus.afya.testcase.SwitchRoleTest" time="5.893"/>
+  <testcase name="clickOnRolesTest" classname="com.niveus.afya.testcase.SwitchRoleTest" time="5.635"/>
+  <testcase name="alertImageTest" classname="com.niveus.afya.testcase.AlertPageTest" time="3.303"/>
+  <testcase name="verifyAlertTest" classname="com.niveus.afya.testcase.AlertPageTest" time="3.016"/>
+  <testcase name="clickOnAlert" classname="com.niveus.afya.testcase.AlertPageTest" time="3.272"/>
+  <testcase name="clearSearchData" classname="com.niveus.afya.testcase.SearchTest" time="0.528"/>
+  <testcase name="clearSearchEnabledTest" classname="com.niveus.afya.testcase.SearchTest" time="0.502"/>
+  <testcase name="doSearchTest" classname="com.niveus.afya.testcase.SearchTest" time="0.382"/>
+  <testcase name="allFilterTest" classname="com.niveus.afya.testcase.FilterTest" time="0.1"/>
+  <testcase name="selectFilter" classname="com.niveus.afya.testcase.FilterTest" time="2.441">
+    <failure message="element click intercepted: Element &lt;span class=&quot;ant-typography ant-typography-small,black small___3HJfZ black___3XTln  undefined&quot; role=&quot;text_comp&quot; data-text-type=&quot;small,black&quot;&gt;...&lt;/span&gt; is not clickable at point (59, 243). Other element would receive the click: &lt;div role=&quot;spinner&quot; class=&quot;ant-spin ant-spin-spinning&quot;&gt;...&lt;/div&gt;&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.siVXCp}, goog:chromeOptions: {debuggerAddress: localhost:36099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dcd644ecba804c717062367aea683c49" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <span class="ant-typography ant-typography-small,black small___3HJfZ black___3XTln  undefined" role="text_comp" data-text-type="small,black">...</span> is not clickable at point (59, 243). Other element would receive the click: <div role="spinner" class="ant-spin ant-spin-spinning">...</div>
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.siVXCp}, goog:chromeOptions: {debuggerAddress: localhost:36099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcd644ecba804c717062367aea683c49
+	at com.niveus.afya.testcase.FilterTest.selectFilter(FilterTest.java:56)
+]]></failure>
+    <system-out><![CDATA[Before navigating to: 'https://stagingwebapp.afya.chat/'
+Navigated to:'https://stagingwebapp.afya.chat/'
+Trying to find Element By : By.id: userName
+Found Element By : By.id: userName
+Trying to find Element By : By.id: password
+Found Element By : By.id: password
+Trying to find Element By : By.tagName: button
+Found Element By : By.tagName: button
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to click on: [[ChromeDriver: chrome on LINUX (dcd644ecba804c717062367aea683c49)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Clicked on: [[ChromeDriver: chrome on LINUX (dcd644ecba804c717062367aea683c49)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Trying to find Element By : By.xpath: //span[text()='Submitter Provider']/parent::div
+Found Element By : By.xpath: //span[text()='Submitter Provider']/parent::div
+Trying to click on: [[ChromeDriver: chrome on LINUX (dcd644ecba804c717062367aea683c49)] -> xpath: //span[text()='Submitter Provider']/parent::div]
+Clicked on: [[ChromeDriver: chrome on LINUX (dcd644ecba804c717062367aea683c49)] -> xpath: //span[text()='Submitter Provider']/parent::div]
+Trying to find Element By : By.xpath: //div[@role='filter_holder']//img[contains(@src,'data:image/png;')]
+Found Element By : By.xpath: //div[@role='filter_holder']//img[contains(@src,'data:image/png;')]
+Trying to find Element By : By.xpath: //span[text()=' All Chats']
+Found Element By : By.xpath: //span[text()=' All Chats']
+Trying to find Element By : By.xpath: //span[text()=' All Chats']
+Found Element By : By.xpath: //span[text()=' All Chats']
+Trying to click on: [[ChromeDriver: chrome on LINUX (dcd644ecba804c717062367aea683c49)] -> xpath: //span[text()=' All Chats']]
+Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="ant-typography ant-typography-small,black small___3HJfZ black___3XTln  undefined" role="text_comp" data-text-type="small,black">...</span> is not clickable at point (59, 243). Other element would receive the click: <div role="spinner" class="ant-spin ant-spin-spinning">...</div>
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.siVXCp}, goog:chromeOptions: {debuggerAddress: localhost:36099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcd644ecba804c717062367aea683c49
+Trying to find Element By : By.xpath: //span[text()=' All Chats']
+Found Element By : By.xpath: //span[text()=' All Chats']
+Trying to click on: [[ChromeDriver: chrome on LINUX (dcd644ecba804c717062367aea683c49)] -> xpath: //span[text()=' All Chats']]
+Exception occured: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="ant-typography ant-typography-small,black small___3HJfZ black___3XTln  undefined" role="text_comp" data-text-type="small,black">...</span> is not clickable at point (59, 243). Other element would receive the click: <div role="spinner" class="ant-spin ant-spin-spinning">...</div>
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.siVXCp}, goog:chromeOptions: {debuggerAddress: localhost:36099}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dcd644ecba804c717062367aea683c49
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 27998
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 10, 2021 11:42:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="closeFilterTest" classname="com.niveus.afya.testcase.FilterTest" time="30.26"/>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ChatPageTest" time="78.343">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Submitter Provider']/parent::div"}
+  (Session info: headless chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a
+*** Element info: {Using=xpath, value=//span[text()='Submitter Provider']/parent::div}
+	at com.niveus.afya.testcase.ChatPageTest.setUp(ChatPageTest.java:35)
+</failure>
+    <system-out><![CDATA[Before navigating to: 'https://stagingwebapp.afya.chat/'
+Navigated to:'https://stagingwebapp.afya.chat/'
+Trying to find Element By : By.id: userName
+Found Element By : By.id: userName
+Trying to find Element By : By.id: password
+Found Element By : By.id: password
+Trying to find Element By : By.tagName: button
+Found Element By : By.tagName: button
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to find Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Found Element By : By.xpath: //div[contains(@class,'footer')]//span[text()='Yes']
+Trying to click on: [[ChromeDriver: chrome on LINUX (8ec2f149cd5d05b1bce9d5588c04f60a)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Clicked on: [[ChromeDriver: chrome on LINUX (8ec2f149cd5d05b1bce9d5588c04f60a)] -> xpath: //div[contains(@class,'footer')]//span[text()='Yes']]
+Trying to find Element By : By.xpath: //span[text()='Submitter Provider']/parent::div
+Exception occured: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Submitter Provider']/parent::div"}
+  (Session info: headless chrome=91.0.4472.101)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a
+*** Element info: {Using=xpath, value=//span[text()='Submitter Provider']/parent::div}
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 23153
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 10, 2021 11:44:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clikcOnChatSessionTest" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="chatHeaderVisibiltyTest" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}"/>
+  </testcase>
+  <testcase name="chatAreaElementTest" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}"/>
+  </testcase>
+  <testcase name="mediaFilesSectionTest" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}"/>
+  </testcase>
+  <testcase name="atCodesVisibilityTest" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}"/>
+  </testcase>
+  <testcase name="videoMemberListTest" classname="com.niveus.afya.testcase.ChatPageTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Submitter Provider&apos;]/parent::div&quot;}&#10;  (Session info: headless chrome=91.0.4472.101)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.TdYA4a}, goog:chromeOptions: {debuggerAddress: localhost:45485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ec2f149cd5d05b1bce9d5588c04f60a&#10;*** Element info: {Using=xpath, value=//span[text()=&apos;Submitter Provider&apos;]/parent::div}"/>
+  </testcase>
+  <testcase name="loginTest" classname="com.niveus.afya.testcase.LoginPageTest" time="0.364"/>
+  <testcase name="loginTest" classname="com.niveus.afya.testcase.LoginPageTest" time="1.178"/>
+  <testcase name="loginTest" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 46.484&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d597a441141b0b22461262a84ade06b6"/>
+  </testcase>
+  <testcase name="loginTest" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 46.484&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d597a441141b0b22461262a84ade06b6"/>
+  </testcase>
+  <testcase name="loginTest" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 46.484&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d597a441141b0b22461262a84ade06b6"/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.LoginPageTest" time="51.721">
+    <failure message="timeout: Timed out receiving message from renderer: 46.484&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d597a441141b0b22461262a84ade06b6" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 46.484
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d597a441141b0b22461262a84ade06b6
+	at com.niveus.afya.testcase.LoginPageTest.setUp(LoginPageTest.java:25)
+</failure>
+    <system-out><![CDATA[Before navigating to: 'https://stagingwebapp.afya.chat/'
+Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 46.484
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d597a441141b0b22461262a84ade06b6
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 14152
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 10, 2021 11:45:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1628576182.685][SEVERE]: Timed out receiving message from renderer: 46.484
+[1628576182.685][SEVERE]: Timed out receiving message from renderer: 46.484
+]]></system-err>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="loginPagelabelTest" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 46.484&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d597a441141b0b22461262a84ade06b6"/>
+  </testcase>
+  <testcase name="loginPageTitleTest" classname="com.niveus.afya.testcase.LoginPageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 46.484&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.axNBMe}, goog:chromeOptions: {debuggerAddress: localhost:35211}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d597a441141b0b22461262a84ade06b6"/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="50.45">
+    <failure message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 48.397
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e41ee184282836de89c4802408bad271
+	at com.niveus.afya.testcase.ProfileTest.setUp(ProfileTest.java:31)
+</failure>
+    <system-out><![CDATA[Before navigating to: 'https://stagingwebapp.afya.chat/'
+Exception occured: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 48.397
+  (Session info: headless chrome=91.0.4472.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e41ee184282836de89c4802408bad271
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 7770
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 10, 2021 11:46:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1628576233.181][SEVERE]: Timed out receiving message from renderer: 48.397
+[1628576233.181][SEVERE]: Timed out receiving message from renderer: 48.397
+]]></system-err>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="myProfileVisibilityTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="tearDown" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="clikcOnProfileTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+  <testcase name="profileHeaderTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+  <testcase name="LoggedInUserNameTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+  <testcase name="userRoleInProfileTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+  <testcase name="updateUserInformationTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+  <testcase name="uploadProfileImageTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+  <testcase name="userProfileTest" classname="com.niveus.afya.testcase.ProfileTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 48.397&#10;  (Session info: headless chrome=91.0.4472.101)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;niveus-HP-EliteBook-820-G3&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-73-generic&apos;, java.version: &apos;11.0.11&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.101, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: /tmp/.com.google.Chrome.wxTVAi}, goog:chromeOptions: {debuggerAddress: localhost:33975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e41ee184282836de89c4802408bad271"/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,58 @@
+# Created at 2021-08-10T12:19:19.251
+Unexpected IOException with stream: Exception occured: org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:30115
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver
+
+
+# Created at 2021-08-10T12:19:19.253
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+
+# Created at 2021-08-10T12:19:19.254
+Unexpected IOException with stream: Exception occured: org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:30115
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver
+
+
+# Created at 2021-08-10T12:19:19.256
+Unexpected IOException with stream: Exception occured: org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:30115
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver
+
+
+# Created at 2021-08-10T12:19:19.257
+Unexpected IOException with stream: Exception occured: org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:30115
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver
+
+
+# Created at 2021-08-10T12:19:19.258
+Unexpected IOException with stream: Exception occured: org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:30115
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver
+
+
+# Created at 2021-08-10T12:19:19.260
+Unexpected IOException with stream: Exception occured: org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:30115
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver
+
+
+# Created at 2021-08-10T12:19:19.261
+Unexpected IOException with stream: Exception occured: org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:30115
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'niveus-HP-EliteBook-820-G3', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-73-generic', java.version: '11.0.11'
+Driver info: driver.version: EventFiringWebDriver
+
+

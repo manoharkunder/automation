@@ -1,0 +1,10 @@
+com/niveus/afya/testcase/ChooseRoleTest.class
+com/niveus/afya/testcase/ProfileTest.class
+com/niveus/afya/testcase/SearchTest.class
+com/niveus/afya/testcase/SortTest.class
+com/niveus/afya/testcase/SwitchRoleTest.class
+com/niveus/afya/testcase/FilterTest.class
+com/niveus/afya/testcase/AlertPageTest.class
+com/niveus/afya/testcase/HomePageTest.class
+com/niveus/afya/testcase/ChatPageTest.class
+com/niveus/afya/testcase/LoginPageTest.class

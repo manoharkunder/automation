@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Afya Regression Testcases">
+
+	<listeners>
+
+		<listener
+			class-name="com.ExtentReportListener.ExtentReportListener" />
+            
+	</listeners>
+	<test name="Regression">
+		<classes>
+			<class name="com.niveus.afya.testcase.LoginPageTest" />						
+						<class name="com.niveus.afya.testcase.AlertPageTest" />						
+			
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
+            
