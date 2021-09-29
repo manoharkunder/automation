@@ -108,7 +108,7 @@ public class SendEmail {
 			messageBodyPart = new MimeBodyPart();
 			//TestBase.updateScreenShot();
 		//	DataSource source = new FileDataSource("/home/niveus/Afya-Automation/Report/ReportPic.png");
-			DataSource source = new FileDataSource("http://localhost:8080/job/Automation/ws/Report/ReportPic.png");
+			DataSource source = new FileDataSource("Report/ReportPic.png");
 
 			
 			messageBodyPart.setDataHandler(new DataHandler(source));
