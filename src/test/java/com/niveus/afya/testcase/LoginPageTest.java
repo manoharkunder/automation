@@ -48,7 +48,7 @@ public class LoginPageTest extends TestBase {
 	//	return data;
 	}
 
-	@Test(priority = -1, dataProvider = "getLoginTestData",enabled = false)
+	@Test(priority = -1, dataProvider = "getLoginTestData")
 	public void loginTest(String username, String password) {
 		Reporter.log("loginTest method is running", true);
 
