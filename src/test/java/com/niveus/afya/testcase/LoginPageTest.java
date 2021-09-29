@@ -33,7 +33,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(title, prop.getProperty("title"));
 	}
 
-	@Test()
+	@Test(enabled = false)
 	public void loginPagelabelTest() {
 		Reporter.log("loginPagelabelTest method is running", true);
 
@@ -48,7 +48,7 @@ public class LoginPageTest extends TestBase {
 	//	return data;
 	}
 
-	@Test(priority = -1, dataProvider = "getLoginTestData", enabled = false)
+	@Test(priority = -1, dataProvider = "getLoginTestData",enabled = false)
 	public void loginTest(String username, String password) {
 		Reporter.log("loginTest method is running", true);
 

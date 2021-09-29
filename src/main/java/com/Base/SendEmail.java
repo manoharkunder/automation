@@ -107,7 +107,10 @@ public class SendEmail {
 			// Part two is attachment
 			messageBodyPart = new MimeBodyPart();
 			//TestBase.updateScreenShot();
-			DataSource source = new FileDataSource("/home/niveus/Afya-Automation/Report/ReportPic.png");
+		//	DataSource source = new FileDataSource("/home/niveus/Afya-Automation/Report/ReportPic.png");
+			DataSource source = new FileDataSource("http://localhost:8080/job/Automation/ws/Report/ReportPic.png");
+
+			
 			messageBodyPart.setDataHandler(new DataHandler(source));
 			// messageBodyPart.setFileName(filename.getName());
 			messageBodyPart.setHeader("Content-ID", "<image>");
