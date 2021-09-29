@@ -51,14 +51,12 @@ public class TestBase {
 			driver = new ChromeDriver(options);
 		} else {
 			if (browserName.equals("chrome")) {
-				// System.setProperty("webdriver.chrome.driver",
-				// "/Users/naveenkhunteta/Downloads/chromedriver");
+				
 				options.addArguments("--disable-notifications");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);
 			} else if (browserName.equals("Firefox")) {
-				// System.setProperty("webdriver.gecko.driver",
-				// "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");
+			
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 			}
@@ -78,35 +76,26 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 
 	}
-	@AfterSuite
-	public void flushReport() throws Exception {
-		generateReport();
-		
-		 SendEmail email = new SendEmail();
-		 email.sendEmail();
-		 
-	}
-
-	public static void  generateReport() throws Exception {
-		FileOutputStream file = new FileOutputStream(
-				System.getProperty("user.dir") + "/src/main/java/com/config/config.properties");
-
-		prop.setProperty("url", "file:///home/niveus/Afya-Automation/test-output/Afya_Extent.html");
-		prop.store(file, null);
-		initialization();
-		for (int i = 0; i < 5; i++) {
-			driver.navigate().refresh();
-
-		}
-		prop.setProperty("url", "https://stagingwebapp.afya.chat/");
-		prop.store(file, null);
-		file.close();
-		TestUtil.generateScreenShot();
-
-	}
 	
-	public static void updateScreenShot() throws Exception
-	{
-		generateReport();
-	}
+	  @AfterSuite public void flushReport() throws Exception { generateReport();
+	  
+	  SendEmail email = new SendEmail(); email.sendEmail();
+	  
+	  }
+	  
+	  public static void generateReport() throws Exception { FileOutputStream file
+	  = new FileOutputStream( System.getProperty("user.dir") +
+	  "/src/main/java/com/config/config.properties");
+	  
+	  
+	  prop.setProperty("url",
+	  "file:///home/niveus/Afya-Automation/test-output/Afya_Extent.html");
+	  prop.store(file, null); initialization(); prop.setProperty("url",
+	  "https://stagingwebapp.afya.chat/"); prop.store(file, null) ; file.close();
+	  TestUtil.generateScreenShot();
+	  
+	  }
+	  
+	  public static void updateScreenShot() throws Exception { generateReport(); }
+	 
 }

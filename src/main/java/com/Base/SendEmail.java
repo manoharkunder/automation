@@ -106,7 +106,7 @@ public class SendEmail {
 
 			// Part two is attachment
 			messageBodyPart = new MimeBodyPart();
-			TestBase.updateScreenShot();
+			//TestBase.updateScreenShot();
 			DataSource source = new FileDataSource("/home/niveus/Afya-Automation/Report/ReportPic.png");
 			messageBodyPart.setDataHandler(new DataHandler(source));
 			// messageBodyPart.setFileName(filename.getName());

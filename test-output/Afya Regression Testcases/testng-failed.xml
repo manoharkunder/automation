@@ -6,24 +6,31 @@
   </listeners>
   <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="com.niveus.afya.testcase.LoginPageTest">
+      <class name="com.niveus.afya.testcase.SortTest">
         <methods>
+          <include name="verifySortTest"/>
           <include name="tearDown"/>
-          <include name="loginTest"/>
           <include name="setUp"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginPagelabelTest"/>
+          <include name="sortSectionIsEnabledTest"/>
           <include name="flushReport"/>
         </methods>
-      </class> <!-- com.niveus.afya.testcase.LoginPageTest -->
-      <class name="com.niveus.afya.testcase.AlertPageTest">
+      </class> <!-- com.niveus.afya.testcase.SortTest -->
+      <class name="com.niveus.afya.testcase.ChatPageTest">
         <methods>
-          <include name="clickOnAlert"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="chatHeaderVisibiltyTest"/>
           <include name="flushReport"/>
         </methods>
-      </class> <!-- com.niveus.afya.testcase.AlertPageTest -->
+      </class> <!-- com.niveus.afya.testcase.ChatPageTest -->
+      <class name="com.niveus.afya.testcase.ProfileTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="uploadProfileImageTest"/>
+          <include name="flushReport"/>
+        </methods>
+      </class> <!-- com.niveus.afya.testcase.ProfileTest -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [Afya Regression Testcases] -->

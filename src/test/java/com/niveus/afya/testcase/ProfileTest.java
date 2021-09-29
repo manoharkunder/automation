@@ -1,5 +1,7 @@
 package com.niveus.afya.testcase;
 
+import java.io.File;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -94,8 +96,12 @@ public class ProfileTest extends TestBase {
 
 	@Test(priority = 7)
 	public void uploadProfileImageTest() {
+		File f = new File("Report");
+
+		File fs = new File(f, "ReportPic.Png");
+		
 		profile.ProfileHeaderIsDisplayed();
-		String sucessMsg = profile.profileImageUpdate("/home/niveus/Pictures/alvin.png");
+		String sucessMsg = profile.profileImageUpdate(fs.getAbsolutePath());
 		Assert.assertEquals(sucessMsg, "your profile image has been updated successfully");
 	}
 

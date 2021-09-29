@@ -1,6 +1,6 @@
 package com.niveus.afya.testcase;
 
-import org.testng.Assert;
+import org.testng.Assert;	
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,7 +26,7 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,enabled=false)
 	public void loginPageTitleTest() {
 		Reporter.log("loginPageTitleTest method is running", true);
 		String title = loginPage.validateLoginPageTitle();
@@ -43,11 +43,12 @@ public class LoginPageTest extends TestBase {
 
 	@DataProvider
 	public Object[][] getLoginTestData() {
-		Object[][] data = TestUtil.getTestData("logindata");
-		return data;
+		//Object[][] data = TestUtil.getTestData("logindata");
+		return TestUtil.getTestData("logindata");
+	//	return data;
 	}
 
-	@Test(priority = -1, dataProvider = "getLoginTestData")
+	@Test(priority = -1, dataProvider = "getLoginTestData", enabled = false)
 	public void loginTest(String username, String password) {
 		Reporter.log("loginTest method is running", true);
 
@@ -56,7 +57,7 @@ public class LoginPageTest extends TestBase {
 		alertPage = loginPage.login(username, password);
 
 	}
-
+	
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

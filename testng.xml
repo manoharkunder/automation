@@ -4,24 +4,13 @@
 
 	<listeners>
 
-		<listener
-			class-name="com.ExtentReportListener.ExtentReportListener" />
+		<listener class-name="com.ExtentReportListener.ExtentReportListener" />
             
 	</listeners>
 	<test name="Regression">
 		<classes>
 			<class name="com.niveus.afya.testcase.LoginPageTest" />						
-			<class name="com.niveus.afya.testcase.AlertPageTest" />		
-			<class name="com.niveus.afya.testcase.ChatPageTest" />						
-			<class name="com.niveus.afya.testcase.ChooseRoleTest" />						
-			<class name="com.niveus.afya.testcase.FilterTest" />						
-			<class name="com.niveus.afya.testcase.HomePageTest" />						
-			<class name="com.niveus.afya.testcase.ProfileTest" />						
-			<class name="com.niveus.afya.testcase.SearchTest" />						
-			<class name="com.niveus.afya.testcase.SortTest" />						
-			<class name="com.niveus.afya.testcase.SwitchRoleTest" />						
-							
-			
+									
 		</classes>
 	</test> <!-- Default test -->
 </suite> <!-- Default suite -->
