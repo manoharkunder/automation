@@ -88,8 +88,8 @@ public class TestBase {
 	  "/src/main/java/com/config/config.properties");
 	  
 	  
-	  prop.setProperty("url",
-	  "file:///home/niveus/Afya-Automation/test-output/Afya_Extent.html");
+	 // prop.setProperty("url","file:///home/niveus/Afya-Automation/test-output/Afya_Extent.html");
+	  prop.setProperty("url","http://localhost:8080/job/Automation/ws/test-output/Afya_Extent.html");
 	  prop.store(file, null); initialization(); prop.setProperty("url",
 	  "https://stagingwebapp.afya.chat/"); prop.store(file, null) ; file.close();
 	  TestUtil.generateScreenShot();
