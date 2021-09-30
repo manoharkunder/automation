@@ -1,31 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[loginPageTitleTest method is running]]>
+    </line>
     <line>
       <![CDATA[loginPagelabelTest method is running]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-29T11:53:44 IST" name="Afya Regression Testcases" finished-at="2021-09-29T11:53:56 IST" duration-ms="12410">
+  <suite started-at="2021-09-30T14:53:04 IST" name="Afya Regression Testcases" finished-at="2021-09-30T14:53:39 IST" duration-ms="34566">
     <groups>
     </groups>
-    <test started-at="2021-09-29T11:53:44 IST" name="Regression" finished-at="2021-09-29T11:53:56 IST" duration-ms="12410">
+    <test started-at="2021-09-30T14:53:04 IST" name="Regression" finished-at="2021-09-30T14:53:39 IST" duration-ms="34566">
       <class name="com.niveus.afya.testcase.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-29T11:53:44 IST" name="setUp" finished-at="2021-09-29T11:53:56 IST" duration-ms="12218" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-30T14:53:04 IST" name="setUp" finished-at="2021-09-30T14:53:21 IST" duration-ms="16938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPagelabelTest()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-29T11:53:56 IST" name="loginPagelabelTest" finished-at="2021-09-29T11:53:56 IST" duration-ms="80" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-30T14:53:21 IST" name="loginPageTitleTest" finished-at="2021-09-30T14:53:23 IST" duration-ms="2039" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[loginPageTitleTest method is running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-30T14:53:23 IST" name="tearDown" finished-at="2021-09-30T14:53:23 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-30T14:53:24 IST" name="setUp" finished-at="2021-09-30T14:53:38 IST" duration-ms="14502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginPagelabelTest()[pri:2, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-30T14:53:38 IST" name="loginPagelabelTest" finished-at="2021-09-30T14:53:39 IST" duration-ms="880" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[loginPagelabelTest method is running]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginPagelabelTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-29T11:53:56 IST" name="tearDown" finished-at="2021-09-29T11:53:56 IST" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-30T14:53:39 IST" name="tearDown" finished-at="2021-09-30T14:53:39 IST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-29T11:53:56 IST" name="flushReport" finished-at="2021-09-29T11:55:37 IST" duration-ms="100811" status="PASS">
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@4a22f9e2]" started-at="2021-09-30T14:53:39 IST" name="flushReport" finished-at="2021-09-30T14:55:23 IST" duration-ms="103756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

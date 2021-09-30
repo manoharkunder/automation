@@ -26,14 +26,14 @@ public class LoginPageTest extends TestBase {
 		loginPage = new LoginPage();
 	}
 
-	@Test(priority = 1,enabled=false)
+	@Test(priority = 1)
 	public void loginPageTitleTest() {
 		Reporter.log("loginPageTitleTest method is running", true);
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, prop.getProperty("title"));
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void loginPagelabelTest() {
 		Reporter.log("loginPagelabelTest method is running", true);
 
@@ -48,7 +48,7 @@ public class LoginPageTest extends TestBase {
 	//	return data;
 	}
 
-	@Test(priority = -1, dataProvider = "getLoginTestData")
+	@Test(priority = -1, dataProvider = "getLoginTestData",enabled=false)
 	public void loginTest(String username, String password) {
 		Reporter.log("loginTest method is running", true);
 

@@ -4,7 +4,7 @@
 
 	<listeners>
 
-		<listener class-name="com.ExtentReportListener.ExtentReportListener" />
+		<listener class-name="com.ExtentReportListener.ExtentReportListener"/>
             
 	</listeners>
 	<test name="Regression">
