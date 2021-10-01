@@ -1,4 +1,5 @@
 package com.Base;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -20,11 +21,11 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+import com.util.TestUtil;
+
 public class SendEmail {
 
-	public void sendEmail()
-
-			throws IOException, InterruptedException {
+	public void sendEmail() throws IOException, InterruptedException {
 		System.out.println("#####################email start");
 		Properties properties = new Properties();
 		System.out.println("#####################email path" + System.getProperty("user.dir") + "/Qa.properties");
@@ -36,7 +37,7 @@ public class SendEmail {
 		String[] toemail = properties.getProperty("to_emailid").split(","); // List of recipient email addresses
 		String subjectValue = properties.getProperty("subject");
 		String subject = MessageFormat.format(subjectValue, datetime.format(new Date()));
-		String bodyValue = properties.getProperty("email_body")+"<img src=\"cid:image\">";
+		String bodyValue = properties.getProperty("email_body") + "<img src=\"cid:image\">";
 		// MessageFormat.format(bodyValue, "...........");
 
 		// File filename = new File(System.getProperty("user.dir") +
@@ -91,12 +92,12 @@ public class SendEmail {
 			BodyPart messageBodyPart = new MimeBodyPart();
 
 			// String htmlText = "<H1>Hi Team here is our automation report</H1><img
-		//	 src=\"cid:image\">";
+			// src=\"cid:image\">";
 
 			// Now set the actual message
 			messageBodyPart.setContent(bodyValue, "text/html");
 			// messageBodyPart.setText(body);
-
+			
 			// Create a multipart message
 			// Multipart multipart = new MimeMultipart();
 
@@ -105,10 +106,11 @@ public class SendEmail {
 
 			// Part two is attachment
 			messageBodyPart = new MimeBodyPart();
-			//TestBase.updateScreenShot();
-		//	DataSource source = new FileDataSource("/home/niveus/Afya-Automation/Report/ReportPic.png");
-			DataSource source = new FileDataSource("Report/ReportPic.png");
+			// TestBase.updateScreenShot();
+			// DataSource source = new
+			// FileDataSource("/home/niveus/Afya-Automation/Report/ReportPic.png");
 
+			DataSource source = new FileDataSource(TestUtil.getScreenshot(TestBase.driver));
 			
 			messageBodyPart.setDataHandler(new DataHandler(source));
 			// messageBodyPart.setFileName(filename.getName());

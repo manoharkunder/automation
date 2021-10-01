@@ -14,10 +14,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.Base.TestBase;
 
 public class TestUtil extends TestBase {
@@ -108,12 +106,10 @@ public class TestUtil extends TestBase {
 		Thread.sleep(5000);
 	}
 
-	public static void generateScreenShot() throws Exception {
-		//WebDriverWait wait = new WebDriverWait(driver, 10);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='dashboard-view']")));
+	public static void navigateToReport()  {
+		
 		WebElement theam = driver.findElement(By.xpath("//a[@class='dashboard-view']"));
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-
 		try
 		{
 			executor.executeScript("arguments[0].click();", theam);
@@ -121,15 +117,30 @@ public class TestUtil extends TestBase {
 		}
 		catch (Exception e) {
 		}
-		
-	//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@class='theme-selector']")));
-
 		WebElement blackTheam = driver.findElement(By.xpath("//li[@class='theme-selector']"));
 		executor.executeScript("arguments[0].click();", blackTheam);
-
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/Report/" + "ReportPic.png"));
 	}
+	
+	public static String getScreenshot(WebDriver driver)
+	{
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		
+		File src=ts.getScreenshotAs(OutputType.FILE);
+		
+		String path=System.getProperty("user.dir")+"/Screenshot/"+"report"+System.currentTimeMillis()+".png";
+		
+		File destination=new File(path);
+		
+		try 
+		{
+			FileUtils.copyFile(src, destination);
+		} catch (IOException e) 
+		{
+			System.out.println("Capture Failed "+e.getMessage());
+		}
+		
+		return path;
+	}
+
 
 }

@@ -1,6 +1,6 @@
 package com.niveus.afya.testcase;
 
-import org.testng.Assert;	
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -8,6 +8,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.Base.TestBase;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.pages.AlertPage;
 import com.pages.LoginPage;
 import com.util.TestUtil;
@@ -15,6 +17,8 @@ import com.util.TestUtil;
 public class LoginPageTest extends TestBase {
 	LoginPage loginPage;
 	AlertPage alertPage;
+	ExtentReports extent;
+	ExtentTest logger;
 
 	public LoginPageTest() {
 		super();
@@ -43,12 +47,12 @@ public class LoginPageTest extends TestBase {
 
 	@DataProvider
 	public Object[][] getLoginTestData() {
-		//Object[][] data = TestUtil.getTestData("logindata");
+		// Object[][] data = TestUtil.getTestData("logindata");
 		return TestUtil.getTestData("logindata");
-	//	return data;
+		// return data;
 	}
 
-	@Test(priority = -1, dataProvider = "getLoginTestData",enabled=false)
+	@Test(priority = -1, dataProvider = "getLoginTestData", enabled = false)
 	public void loginTest(String username, String password) {
 		Reporter.log("loginTest method is running", true);
 
@@ -57,9 +61,10 @@ public class LoginPageTest extends TestBase {
 		alertPage = loginPage.login(username, password);
 
 	}
-	
+
 	@AfterMethod
 	public void tearDown() {
+
 		driver.quit();
 	}
 

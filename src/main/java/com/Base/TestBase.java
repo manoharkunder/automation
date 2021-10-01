@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,6 +16,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.testng.annotations.AfterSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.util.TestUtil;
 import com.util.WebEventListener;
 
@@ -25,6 +28,7 @@ public class TestBase {
 	public static Properties prop;
 	public static EventFiringWebDriver e_driver;
 	public static WebDriverEventListener eventListener;
+	static ExtentReports extent;
 
 	public TestBase() {
 		try {
@@ -51,12 +55,12 @@ public class TestBase {
 			driver = new ChromeDriver(options);
 		} else {
 			if (browserName.equals("chrome")) {
-				
+
 				options.addArguments("--disable-notifications");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver(options);
 			} else if (browserName.equals("Firefox")) {
-			
+
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 			}
@@ -72,30 +76,41 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-
+	
+		
 		driver.get(prop.getProperty("url"));
 
 	}
-	
-	  @AfterSuite public void flushReport() throws Exception { generateReport();
-	  
-	  SendEmail email = new SendEmail();
-	// email.sendEmail();
-	  
-	  }
-	  
-	  public static void generateReport() throws Exception { FileOutputStream file
-	  = new FileOutputStream( System.getProperty("user.dir") +
-	  "/src/main/java/com/config/config.properties");
-	  
-	  
-	  prop.setProperty("url","file:///home/niveus/Afya-Automation/test-output/HtmlReport/Report.html");
-	  prop.store(file, null); initialization(); prop.setProperty("url",
-	  "https://stagingwebapp.afya.chat/"); prop.store(file, null) ; file.close();
-	  TestUtil.generateScreenShot();
-	  
-	  }
-	  
-	  public static void updateScreenShot() throws Exception { generateReport(); }
-	 
+	public static void generateReport() throws Exception {
+		
+		FileOutputStream file = new FileOutputStream(
+				System.getProperty("user.dir") + "/src/main/java/com/config/config.properties");
+
+		prop.setProperty("url", "file:///home/niveus/Afya-Automation/test-output/HtmlReport/Report.html");
+		prop.store(file, null);
+		initialization();
+		
+		prop.setProperty("url", "https://stagingwebapp.afya.chat/");
+		prop.store(file, null);
+		file.close();
+		Dimension dim=new Dimension(1294, 645);
+		driver.manage().window().setSize(dim);
+		TestUtil.navigateToReport();
+		String temp = TestUtil.getScreenshot(driver);
+		MediaEntityBuilder.createScreenCaptureFromPath(temp).build();
+
+		// TestUtil.generateScreenShot();
+
+	}
+	@AfterSuite
+	public void flushReport() throws Exception {
+		System.out.println("Inside flush");
+		generateReport();
+		SendEmail email = new SendEmail();
+		System.out.println("Mail started ");
+		email.sendEmail();
+	//	extent.flush();
+
+	}
+
 }
