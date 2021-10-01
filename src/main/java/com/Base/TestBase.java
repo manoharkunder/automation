@@ -86,7 +86,7 @@ public class TestBase {
 		FileOutputStream file = new FileOutputStream(
 				System.getProperty("user.dir") + "/src/main/java/com/config/config.properties");
 
-		prop.setProperty("url", "file:///home/niveus/Afya-Automation/test-output/HtmlReport/Report.html");
+		prop.setProperty("url", "file://"+System.getProperty("user.dir")+"/test-output/HtmlReport/Report.html");
 		prop.store(file, null);
 		initialization();
 		
@@ -98,13 +98,11 @@ public class TestBase {
 		TestUtil.navigateToReport();
 		String temp = TestUtil.getScreenshot(driver);
 		MediaEntityBuilder.createScreenCaptureFromPath(temp).build();
-
 		// TestUtil.generateScreenShot();
 
 	}
 	@AfterSuite
 	public void flushReport() throws Exception {
-		System.out.println("Inside flush");
 		generateReport();
 		SendEmail email = new SendEmail();
 		System.out.println("Mail started ");
