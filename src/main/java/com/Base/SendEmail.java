@@ -111,6 +111,7 @@ public class SendEmail {
 			// FileDataSource("/home/niveus/Afya-Automation/Report/ReportPic.png");
 
 			DataSource source = new FileDataSource(TestUtil.getScreenshot(TestBase.driver));
+			System.out.println(TestUtil.getScreenshot(TestBase.driver));
 			
 			messageBodyPart.setDataHandler(new DataHandler(source));
 			// messageBodyPart.setFileName(filename.getName());

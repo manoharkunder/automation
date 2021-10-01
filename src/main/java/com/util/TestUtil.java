@@ -138,7 +138,7 @@ public class TestUtil extends TestBase {
 		{
 			System.out.println("Capture Failed "+e.getMessage());
 		}
-		
+		System.out.println(path);
 		return path;
 		
 	}
