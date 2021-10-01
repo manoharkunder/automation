@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -127,8 +129,9 @@ public class TestUtil extends TestBase {
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		
-		String path=System.getProperty("user.dir")+"/Screenshot/"+"screenshot"+".png";
+		 SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
+		    Date date = new Date();  
+		String path=System.getProperty("user.dir")+"/Screenshot/"+formatter.format(date)+".png";
 		
 		File destination=new File(path);
 		
