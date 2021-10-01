@@ -8,8 +8,6 @@ package com.util;
 	 as an when the action done (click, findBy etc). 
 	 */
 
-	import java.io.IOException;
-
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.OutputType;
 	import org.openqa.selenium.WebDriver;
@@ -61,14 +59,10 @@ import com.Base.TestBase;
 			System.out.println("Navigated forward to next page");
 		}
 
-		public void onException(Throwable error, WebDriver driver) {
-			System.out.println("Exception occured: " + error);
-			try {
-				TestUtil.takeScreenshotAtEndOfTest();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
+		
+		  public void onException(Throwable error, WebDriver driver) {
+		  System.out.println("Exception occured: " + error); }
+		 
 
 		public void beforeFindBy(By by, WebElement element, WebDriver driver) {
 			System.out.println("Trying to find Element By : " + by.toString());

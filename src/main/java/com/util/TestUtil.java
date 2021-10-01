@@ -65,11 +65,12 @@ public class TestUtil extends TestBase {
 		return data;
 	}
 
-	public static void takeScreenshotAtEndOfTest() throws IOException {
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
-	}
+	/*
+	 * public static void takeScreenshotAtEndOfTest() throws IOException { File
+	 * scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE); String
+	 * currentDir = System.getProperty("user.dir"); FileUtils.copyFile(scrFile, new
+	 * File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png")); }
+	 */
 
 	public static void runTimeInfo(String messageType, String message) throws InterruptedException {
 		js = (JavascriptExecutor) driver;
@@ -127,7 +128,7 @@ public class TestUtil extends TestBase {
 		
 		File src=ts.getScreenshotAs(OutputType.FILE);
 		
-		String path=System.getProperty("user.dir")+"/Screenshot/"+System.currentTimeMillis()+".png";
+		String path=System.getProperty("user.dir")+"/Screenshot/"+"screenshot"+".png";
 		
 		File destination=new File(path);
 		
