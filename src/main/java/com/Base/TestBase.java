@@ -109,7 +109,6 @@ public class TestBase {
 		SendEmail email = new SendEmail();
 		System.out.println("Mail started ");
 		email.sendEmail();
-	//	extent.flush();
 
 	}
 
