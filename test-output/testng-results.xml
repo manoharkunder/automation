@@ -8,69 +8,42 @@
       <![CDATA[loginPagelabelTest method is running]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-10-01T14:21:07 IST" name="Afya Regression Testcases" finished-at="2021-10-01T14:21:43 IST" duration-ms="35841">
+  <suite started-at="2021-10-01T14:50:59 IST" name="Afya Regression Testcases" finished-at="2021-10-01T14:51:31 IST" duration-ms="31289">
     <groups>
     </groups>
-    <test started-at="2021-10-01T14:21:07 IST" name="Regression" finished-at="2021-10-01T14:21:43 IST" duration-ms="35841">
+    <test started-at="2021-10-01T14:50:59 IST" name="Regression" finished-at="2021-10-01T14:51:31 IST" duration-ms="31289">
       <class name="com.niveus.afya.testcase.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:21:07 IST" name="setUp" finished-at="2021-10-01T14:21:24 IST" duration-ms="16941" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:50:59 IST" name="setUp" finished-at="2021-10-01T14:51:15 IST" duration-ms="15265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:1, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:21:24 IST" name="loginPageTitleTest" finished-at="2021-10-01T14:21:26 IST" duration-ms="2069" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:1, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:51:15 IST" name="loginPageTitleTest" finished-at="2021-10-01T14:51:17 IST" duration-ms="2047" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[loginPageTitleTest method is running]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:21:26 IST" name="tearDown" finished-at="2021-10-01T14:21:26 IST" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:51:17 IST" name="tearDown" finished-at="2021-10-01T14:51:17 IST" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:21:26 IST" name="setUp" finished-at="2021-10-01T14:21:41 IST" duration-ms="14981" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:51:17 IST" name="setUp" finished-at="2021-10-01T14:51:30 IST" duration-ms="12870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPagelabelTest()[pri:2, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:21:41 IST" name="loginPagelabelTest" finished-at="2021-10-01T14:21:43 IST" duration-ms="1558" status="PASS">
+        <test-method signature="loginPagelabelTest()[pri:2, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:51:30 IST" name="loginPagelabelTest" finished-at="2021-10-01T14:51:31 IST" duration-ms="903" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[loginPagelabelTest method is running]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginPagelabelTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:21:43 IST" name="tearDown" finished-at="2021-10-01T14:21:43 IST" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:51:31 IST" name="tearDown" finished-at="2021-10-01T14:51:31 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:21:43 IST" name="flushReport" finished-at="2021-10-01T14:21:46 IST" duration-ms="2799" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.Base.TestBase.generateReport(TestBase.java:101)
-at com.Base.TestBase.flushReport(TestBase.java:109)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:com.niveus.afya.testcase.LoginPageTest@703580bf]" started-at="2021-10-01T14:51:31 IST" name="flushReport" finished-at="2021-10-01T14:53:10 IST" duration-ms="99062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReport -->

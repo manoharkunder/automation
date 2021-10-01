@@ -127,7 +127,7 @@ public class TestUtil extends TestBase {
 		
 		File src=ts.getScreenshotAs(OutputType.FILE);
 		
-		String path=System.getProperty("user.dir")+"/Screenshot/"+"report"+System.currentTimeMillis()+".png";
+		String path=System.getProperty("user.dir")+"/Screenshot/"+"report"+".png";
 		
 		File destination=new File(path);
 		
