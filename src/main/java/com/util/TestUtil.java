@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -19,6 +20,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import com.Base.TestBase;
+import com.google.common.io.Files;
 
 public class TestUtil extends TestBase {
 
@@ -110,7 +112,7 @@ public class TestUtil extends TestBase {
 	}
 
 	public static void navigateToReport()  {
-		
+		System.out.println(driver.getCurrentUrl());
 		WebElement theam = driver.findElement(By.xpath("//a[@class='dashboard-view']"));
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		try
@@ -146,6 +148,5 @@ public class TestUtil extends TestBase {
 		return path;
 		
 	}
-
-
+	
 }
