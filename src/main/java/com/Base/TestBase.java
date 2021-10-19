@@ -88,7 +88,9 @@ public class TestBase {
 	//	if (prop.getProperty("environment").equals("jenkins"))
 			//prop.setProperty("url", "file:///var/lib/jenkins/workspace/Automation/ws/test-output/HtmlReport/Report.html");
 		
-			prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
+	//		prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
+
+		prop.setProperty("url", "file://" + System.getProperty("user.dir") + "Extent_20_20Report");
 
 		prop.store(file, null);
 		initialization();
