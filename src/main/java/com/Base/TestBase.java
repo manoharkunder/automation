@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -87,9 +86,9 @@ public class TestBase {
 		FileOutputStream file = new FileOutputStream(
 				System.getProperty("user.dir") + "/src/main/java/com/config/config.properties");
 	//	if (prop.getProperty("environment").equals("jenkins"))
-			prop.setProperty("url", "file:///var/lib/jenkins/workspace/Automation/ws/test-output/HtmlReport/Report.html");
+			//prop.setProperty("url", "file:///var/lib/jenkins/workspace/Automation/ws/test-output/HtmlReport/Report.html");
 		
-	//		prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
+			prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
 
 		prop.store(file, null);
 		initialization();
