@@ -11,6 +11,7 @@
           <include name="tearDown"/>
           <include name="setUp"/>
           <include name="loginPageTitleTest"/>
+          <include name="loginPagelabelTest"/>
           <include name="flushReport"/>
         </methods>
       </class> <!-- com.niveus.afya.testcase.LoginPageTest -->

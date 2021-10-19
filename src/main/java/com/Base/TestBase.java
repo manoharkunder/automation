@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -76,24 +77,27 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-	
-		
+
 		driver.get(prop.getProperty("url"));
 
 	}
+
 	public static void generateReport() throws Exception {
-		
+
 		FileOutputStream file = new FileOutputStream(
 				System.getProperty("user.dir") + "/src/main/java/com/config/config.properties");
+		if (prop.getProperty("environment").equals("jenkins"))
+			prop.setProperty("url", "http://localhost:8080/job/Automation/ws/test-output/HtmlReport/Report.html#!");
+		else
+			prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
 
-		prop.setProperty("url", "file://"+System.getProperty("user.dir")+"/test-output/HtmlReport/Report.html");
 		prop.store(file, null);
 		initialization();
-		
+
 		prop.setProperty("url", "https://stagingwebapp.afya.chat/");
 		prop.store(file, null);
 		file.close();
-		Dimension dim=new Dimension(1294, 645);
+		Dimension dim = new Dimension(1294, 645);
 		driver.manage().window().setSize(dim);
 		TestUtil.navigateToReport();
 		String temp = TestUtil.getScreenshot(driver);
@@ -101,6 +105,7 @@ public class TestBase {
 		// TestUtil.generateScreenShot();
 
 	}
+
 	@AfterSuite
 	public void flushReport() throws Exception {
 		generateReport();

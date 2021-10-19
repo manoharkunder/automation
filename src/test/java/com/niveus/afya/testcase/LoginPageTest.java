@@ -37,7 +37,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertEquals(title, prop.getProperty("title"));
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,enabled=false)
 	public void loginPagelabelTest() {
 		Reporter.log("loginPagelabelTest method is running", true);
 

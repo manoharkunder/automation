@@ -15,6 +15,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -113,7 +114,10 @@ public class TestUtil extends TestBase {
 
 	public static void navigateToReport()  {
 		System.out.println(driver.getCurrentUrl());
+		driver.findElement(By.id("j_username")).sendKeys(prop.getProperty("jname"));
+		driver.findElement(By.name("j_password")).sendKeys(prop.getProperty("jpassword"),Keys.ENTER);
 		WebElement theam = driver.findElement(By.xpath("//a[@class='dashboard-view']"));
+		
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		try
 		{
