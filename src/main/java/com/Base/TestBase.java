@@ -90,8 +90,8 @@ public class TestBase {
 		
 	//		prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
 
-		//prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/Extent_20_20Report");
-		prop.setProperty("url", "http://localhost:8080/job/Automation/Extent_20_20Report/");
+		prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/htmlreports/Extent_20_20Report");
+	//	prop.setProperty("url", "http://localhost:8080/job/Automation/Extent_20_20Report/");
 
 		prop.store(file, null);
 		initialization();
