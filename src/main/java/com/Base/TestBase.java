@@ -86,10 +86,10 @@ public class TestBase {
 
 		FileOutputStream file = new FileOutputStream(
 				System.getProperty("user.dir") + "/src/main/java/com/config/config.properties");
-		if (prop.getProperty("environment").equals("jenkins"))
+	//	if (prop.getProperty("environment").equals("jenkins"))
 			prop.setProperty("url", "http://localhost:8080/job/Automation/ws/test-output/HtmlReport/Report.html#!");
-		else
-			prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
+		
+	//		prop.setProperty("url", "file://" + System.getProperty("user.dir") + "/test-output/HtmlReport/Report.html");
 
 		prop.store(file, null);
 		initialization();
