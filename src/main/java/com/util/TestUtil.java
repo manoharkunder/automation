@@ -131,6 +131,7 @@ public class TestUtil extends TestBase {
 		}
 		WebElement blackTheam = driver.findElement(By.xpath("//li[@class='theme-selector']"));
 		executor.executeScript("arguments[0].click();", blackTheam);
+		System.out.println("Taken  the titile of the web page +"+ driver.getCurrentUrl());
 	}
 	
 	public static String getScreenshot(WebDriver driver)
